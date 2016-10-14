@@ -43,6 +43,7 @@ SASS
 Javascript
 JQuery_
 
+[Link to GitHub] (avksmit2.github.io/js-github-user)
 
 ### License
 
