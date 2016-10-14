@@ -6,6 +6,7 @@ function Search() {
 
 Search.prototype.getUser = function(user, displayUserInfo, displayRepositories) {
   $.get('https://api.github.com/search/repositories?q=user:'+ user + '&sort=updated&order:desc&per_page=100&access_token=' + apiKey).then(function(response){
+    console.log(response.items[0].owner.avatar_url);
 
     response.items.forEach(function(repository) {
       var dateCreated = moment(repository.created_at).format('MM/DD/YYYY');
@@ -13,7 +14,7 @@ Search.prototype.getUser = function(user, displayUserInfo, displayRepositories) 
       displayRepositories(repository.name, repository.language, repository.description, dateCreated);
     });
 
-    displayUserInfo(user, response.items.length);
+    displayUserInfo(user, response.items.length, response.items[0].owner.avatar_url);
     if (response.items.length === 0) {
       displayNoResults("This user has no repositories!");
     }

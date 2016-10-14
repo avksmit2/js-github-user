@@ -5,10 +5,11 @@ var displayNoResults = function(message) {
   $('#no-results').text(message);
 };
 
-var displayUserInfo = function(user, repoCount) {
+var displayUserInfo = function(user, repoCount, avatar) {
   $('#results').fadeIn();
   $('#user-name').text('User: ' + user);
   $('#repo-count').text('Total Repositories:  ' + repoCount);
+  $('#avatar').html('<img src=' + avatar + '>');
 };
 
 var displayRepositories = function(repositoryName, repositoryLanguage, repositoryDescription, repositoryCreated) {
