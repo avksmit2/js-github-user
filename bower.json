@@ -3,7 +3,7 @@
   "description": "A github user lookup",
   "main": "gulpfile.js",
   "license": "ISC",
-  "homepage": "https://github.com/avksmit2/js-template",
+  "homepage": "https://github.com/avksmit2/js-github-user",
   "ignore": [
     "**/.*",
     "node_modules",

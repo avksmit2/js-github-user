@@ -4,7 +4,7 @@ function Search() {
 
 }
 
-Search.prototype.getUser(user, displayFunction) {
+Search.prototype.getUser = function(user, displayFunction) {
   $.get('https://api.github.com/users/' + user + '?access_token=' + apiKey).then(function(response){
     console.log(response);
     }).fail(function(error){

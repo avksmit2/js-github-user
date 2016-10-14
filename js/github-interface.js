@@ -1,8 +1,11 @@
 var Search = require('./../js/github.js').searchModule;
 
 $(document).ready(function() {
-  $('#form').submit(function(event) {
+  $('#search').submit(function(event) {
     event.preventDefault();
+    var user = $('#user').val();
+    var newSearch = new Search();
 
+    
   });
 });
