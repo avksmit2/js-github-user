@@ -1,7 +1,7 @@
 {
   "name": "js-github-user",
   "version": "1.0.0",
-  "description": "A simple alarm clock",
+  "description": "A github user lookup",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/avksmit2/js-template/issues"
   },
-  "homepage": "https://github.com/avksmit2/js-template#readme"
+  "homepage": "https://github.com/avksmit2/js-template#readme",
+  "dependencies": {
+    "moment": "^2.15.1"
+  }
 }
