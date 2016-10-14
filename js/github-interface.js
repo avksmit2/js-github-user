@@ -11,8 +11,8 @@ var displayUserInfo = function(user, repoCount) {
   $('#repo-count').text('Total Repositories:  ' + repoCount);
 };
 
-var displayRepositories = function(user, repositoryName, repositoryLanguage, repositoryDescription, repositoryCreated) {
-  $('.table, #repos').append('<tr><td>' + repositoryName + '</td> <td>' + repositoryLanguage + '</td> <td>' + repositoryDescription + '</td> <td>' + repositoryCreated + '</td></tr>');
+var displayRepositories = function(repositoryName, repositoryLanguage, repositoryDescription, repositoryCreated) {
+  $('#repos').append('<tr><td>' + repositoryName + '</td> <td>' + repositoryLanguage + '</td> <td>' + repositoryDescription + '</td> <td>' + repositoryCreated + '</td></tr>');
 };
 
 $(document).ready(function() {
@@ -22,7 +22,7 @@ $(document).ready(function() {
     var newSearch = new Search();
 
     $('#no-results').hide();
-    newSearch.getUser(user, displayUserInfo, displayRepositories, displayNoResults);
+    newSearch.getUser(user, displayUserInfo, displayRepositories);
   });
 
   $('#clear-filter').click(function() {
