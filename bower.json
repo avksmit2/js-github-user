@@ -1,9 +1,9 @@
 {
-  "name": "js-alarm-clock",
-  "description": "A simple alarm clock",
+  "name": "js-github-user",
+  "description": "A github user lookup",
   "main": "gulpfile.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/avksmit2/js-template",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,5 +15,8 @@
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
     "moment": "^2.15.1"
-  }
+  },
+  "authors": [
+    "Angie Smith <avksmit2@gmail.com>"
+  ]
 }

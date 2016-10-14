@@ -1,5 +1,5 @@
 {
-  "name": "js-alarm-clock",
+  "name": "js-github-user",
   "version": "1.0.0",
   "description": "A simple alarm clock",
   "main": "gulpfile.js",
@@ -23,5 +23,13 @@
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.3",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avksmit2/js-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avksmit2/js-template/issues"
+  },
+  "homepage": "https://github.com/avksmit2/js-template#readme"
 }
