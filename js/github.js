@@ -4,12 +4,12 @@ function Search() {
 
 }
 
-Search.prototype.getUser = function(user, displayFunction) {
-  $.get('https://api.github.com/users/' + user + '?access_token=' + apiKey).then(function(response){
-    console.log(response);
-    displayFunction(user, response);
-    }).fail(function(error){
-      console.log(error.responseJSON.message);
+Search.prototype.getUser = function(user) {
+  $.get('https://api.github.com/search/repositories?q=user:'+ user + '&access_token=' + apiKey).then(function(response){
+    console.log(response.items[0].name );
+    response.items.forEach()
+  }).fail(function(error){
+    console.log(error.responseJSON.message);
   });
 };
 

@@ -1,8 +1,8 @@
 var Search = require('./../js/github.js').searchModule;
 
-var displayRepositories = function(user, repositories) {
+var displayRepositories = function(user, repositoryName) {
     $('#results, .user-name').text('User: ' + user);
-    $('#results, #repositories').append('<li>' + repositories + '</li>');
+    $('#repo-name').append('<li>' + repositoryName + '</li>');
 };
 
 $(document).ready(function() {
@@ -11,6 +11,6 @@ $(document).ready(function() {
     var user = $('#user').val();
     var newSearch = new Search();
 
-    newSearch.getUser(user, displayRepositories);
+    newSearch.getUser(user);
   });
 });
