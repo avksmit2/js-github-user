@@ -5,9 +5,12 @@ var displayNoResults = function(message) {
   $('#no-results').text(message);
 };
 
-var displayUserInfo = function(userName, userID, repoCount, avatar) {
+var displayUserInfo = function(userName, userID, githubStart, email, followers, repoCount, avatar) {
   $('#results').fadeIn();
   $('#user-name').text('Name: ' + userName + ', UserID: ' + userID);
+  $('#github-start').text('Joined Github on: ' + githubStart);
+  $('#email').html('Email: ' + email);
+  $('#followers').text('Number of followers: ' + followers);
   $('#repo-count').text('Total Repositories:  ' + repoCount);
   $('#avatar').html('<img src=' + avatar + '>');
 };
@@ -23,7 +26,7 @@ $(document).ready(function() {
     var newSearch = new Search();
 
     $('#no-results').hide();
-    newSearch.getUser(user, displayUserInfo, displayRepositories);
+    newSearch.getUser(user, displayUserInfo, displayRepositories, displayNoResults);
   });
 
   $('#clear-filter').click(function() {

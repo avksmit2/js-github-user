@@ -2,23 +2,21 @@ body {
   background: url('/img/background.jpg') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
-  .header {
-    font-size: 3em;
-    color: purple;
-    padding-bottom: 3%;
-
-    #results {
-      display: none;
-
-      #no-results {
-        display: none;
-        color: maroon;
-      }
+  img {
+    height:10vh;
+    .header {
+      font-size: 3em;
+      color: purple;
+      padding-bottom: 3%;
     }
   }
 }
 
-#avatar img {
-  width: 7vh;
+#no-results {
+  display: none;
+  color: maroon;
+}
+
+#results {
+  display: none;
 }
