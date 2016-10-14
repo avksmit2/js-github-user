@@ -5,9 +5,9 @@ var displayNoResults = function(message) {
   $('#no-results').text(message);
 };
 
-var displayUserInfo = function(user, repoCount, avatar) {
+var displayUserInfo = function(userName, userID, repoCount, avatar) {
   $('#results').fadeIn();
-  $('#user-name').text('User: ' + user);
+  $('#user-name').text('Name: ' + userName + ', UserID: ' + userID);
   $('#repo-count').text('Total Repositories:  ' + repoCount);
   $('#avatar').html('<img src=' + avatar + '>');
 };
