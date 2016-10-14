@@ -17,4 +17,8 @@ $(document).ready(function() {
 
     newSearch.getUser(user, displayUserInfo, displayRepositories);
   });
+
+  $('#clear-filter').click(function() {
+    location.reload();
+  });
 });
