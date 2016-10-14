@@ -13,9 +13,11 @@ Search.prototype.getUser = function(user, displayUserInfo, displayRepositories, 
     });
 
     displayUserInfo(user, response.items.length);
-
+    if (response.items.length === 0) {
+      displayNoResults("This user has no repositories!");
+    }
   }).fail(function(error){
-    displayNoResults();
+    displayNoResults("This user does not exist! Check your spelling?");
   });
 };
 

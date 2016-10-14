@@ -1,7 +1,8 @@
 var Search = require('./../js/github.js').searchModule;
 
-var displayNoResults = function() {
+var displayNoResults = function(message) {
   $('#no-results').show();
+  $('#no-results').text(message);
 };
 
 var displayUserInfo = function(user, repoCount) {

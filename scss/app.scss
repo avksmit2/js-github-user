@@ -1,7 +1,17 @@
-#results {
-  display: none;
-}
-
-#no-results {
-  display: none;
+body {
+  background: url('/img/background.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .header {
+    font-size: 3em;
+    color: purple;
+    padding-bottom: 3%;
+    #results {
+      display: none;
+      #no-results {
+        display: none;
+        color: maroon;
+      }
+    }
+  }
 }
