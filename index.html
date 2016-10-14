@@ -19,20 +19,22 @@
         <button type="submit" class="btn btn-info">Search!</button>
         <button id="clear-filter" type="button" class="btn btn-danger">Clear Filter!</button>
       </form>
-      <h3 id="user-name"></h3>
-      <h5 id="repo-count"></h5>
-      <h5 id="github-started"></h5>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Language</th>
-            <th>Description</th>
-            <th>Date Created</th>
-          </tr>
-        </thead>
-        <tbody id="results"></tbody>
-      </table>
+      <div id="results">
+        <h3 id="user-name"></h3>
+        <h5 id="repo-count"></h5>
+        <h5 id="github-started"></h5>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Language</th>
+              <th>Description</th>
+              <th>Date Created</th>
+            </tr>
+          </thead>
+          <tbody id="repos"></tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>
