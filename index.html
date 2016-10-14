@@ -13,12 +13,13 @@
     <div class="container">
       <form class="form-inline" id="search">
         <div class="form-group">
-          <label for="user">Enter user name:</label>
+          <label for="user">Enter user ID:</label>
           <input id="user" type="text">
         </div>
         <button type="submit" class="btn btn-info">Search!</button>
         <button id="clear-filter" type="button" class="btn btn-danger">Clear Filter!</button>
       </form>
+      <h1 id="no-results">This user does not exist! Check your spelling?</h1>
       <div id="results">
         <h3 id="user-name"></h3>
         <h5 id="repo-count"></h5>
