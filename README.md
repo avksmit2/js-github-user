@@ -35,12 +35,12 @@ If there are any issues, questions or ideas regarding this application, contact 
 
 ## Technologies Used
 
-_Html
-CSS
-Bootstrap
-Node.js
-SASS
-Javascript
+_Html,
+CSS,
+Bootstrap,
+Node.js,
+SASS,
+Javascript,
 JQuery_
 
 ### License
